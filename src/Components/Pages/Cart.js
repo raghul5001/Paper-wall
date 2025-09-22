@@ -4,6 +4,7 @@ function Cart() {
   return (
     <div>
        Cart Page
+       {/* checking purpose */}
     </div>
   )
 }
