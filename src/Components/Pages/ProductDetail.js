@@ -4,6 +4,7 @@ function ProductDetail() {
   return (
     <div>
        ProductDetail
+       <p></p>
     </div>
   )
 }
