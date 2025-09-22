@@ -4,6 +4,7 @@ function Payment() {
   return (
     <div>
       Payment
+      {/* checking purpose */}
     </div>
   )
 }
