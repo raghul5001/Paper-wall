@@ -22,7 +22,7 @@ function App() {
             <Route path='/payment' element={<Payment/>}/>
             <Route path='/productdetail' element={<ProductDetail/>}/>
             <Route path='/productlisting' element={<ProductListing/>}/>
-            
+            {/* checking purpose */}
           </Routes>
           </Router>
     </div>
