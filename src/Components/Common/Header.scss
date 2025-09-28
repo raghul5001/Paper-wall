@@ -1,0 +1,158 @@
+.header-top {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 40px; 
+  position: absolute;
+  top: -40px;
+  left: 1px;
+
+}
+.search-bar-container {
+  position: relative; 
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+
+.search-bar-container input {
+  position: relative;
+  width: 80%;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  font-size: 12px;
+  
+}
+  .search-icon {
+    position: relative;
+    height: 33px;
+    width: auto;
+    color: #555;
+    right: 150px;
+    top: 7px;
+}
+.caller{
+  position: relative;
+  height:20px;
+  right:70px;
+  display: flex
+}
+
+
+.header-right {
+    
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  top: 50%;
+  font-weight:lato;
+  font-size: 10px;
+
+}
+
+
+.contact-info {
+  font-size: 12px;
+  color: #555;
+  text-decoration: none;
+  font-weight:lato;
+  font-size: 10px;
+  position: relative;
+  align-items: center;
+  right: 60px;
+ 
+ 
+  h4{
+    padding: 0;
+    margin: 0;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  
+  }
+
+   
+  
+
+  
+}
+
+.contact-info  {
+  font-weight: bold;
+  row-gap:px;
+}
+.Flag{
+  position: relative;
+  height:15px ;
+  right: -14px;
+  display: flex;
+}
+
+.language-selector select {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.cart-icon  {
+  position: relative;
+  height: 20px;
+  right: 1px;
+  display:flex;
+}
+.add-cart{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.login-btn {
+  background-color:#A16220;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.header-one {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content:center;
+  gap: 30px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #333;
+  font-family:sans-serif;
+  font-size: 12px;
+}
+.main-header{
+  background-color: #fff;
+  width: 100%;
+
+}

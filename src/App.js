@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router , Routes , Route } from 'react-router-dom'
+import Header from './Components/Common/Header'
+import Footer  from './Components/Common/Footer'
 import Register from './Components/Pages/Register'
 import Login from './Components/Pages/Login'
 import Blog from './Components/Pages/Blog'
@@ -14,6 +16,8 @@ function App() {
     <div>
          <Router>
           <Routes>
+            <Route path='/Header' element={<Header/>}/>
+            <Route path='/Footer' element={<Footer/>}/>
             <Route path='/' element={<Register/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/blog' element={<Blog/>}/>

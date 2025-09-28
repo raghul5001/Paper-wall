@@ -1,0 +1,159 @@
+.footer-container{
+  background: rgba(12, 38, 33, 1);
+  color: #fff;
+  height: 400px;
+  margin-bottom: 100px;
+  position: relative;
+  top: 240px;
+   padding: 10px 20px;
+   display: flex;
+  
+
+}
+
+.logo{
+  width:80px;
+  height: 40px;
+  border-radius: 40%;
+  position:absolute;
+  top: 50px;
+  left: 25px;
+}
+.social-media{
+  width: 253px;
+  height: 47px;
+  position: absolute; 
+  top: 180px;
+  left: 17px;
+}
+.section{
+  display: flex;
+  font-size: 9px;
+  left: 20px;
+  position: absolute;
+  top:210px;
+}
+.search-bar{
+  position:absolute;
+  top: 250px;
+  left: 24px;
+}
+.newsletter-button{
+   background: rgba(161,98,32,1);
+   cursor: pointer;
+}
+
+.link-column{
+  display: flex;
+  flex-direction: column;
+  gap:1px;
+  position: absolute;
+  right: 710px;
+  top:20px;
+  font-size: 12px;
+}
+.link-column1{
+  display:flex;
+ flex-direction: column;
+ gap:0px;
+ position: absolute;
+ right: 720px;
+ top:60px;
+ font-size: 12px;
+
+}
+.link-column2{
+  display: flex;
+  flex-direction: column;
+  gap:1px;
+  position:absolute;
+  right:550px;
+  top:70px;
+  font-size: 11px;
+
+}
+.contact-item1{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  position: absolute;
+  top:40px;
+  right: 200px;
+  font-size: 10px;
+}
+.location{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top:70px;
+  right:70px;
+  gap:10px;
+  font-size: 10px;
+}
+.contact-item2{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  top:105px;
+  right:175px;
+  gap:10px;
+  position: absolute;
+  font-size: 12px;
+}
+.contact-item3{
+  display:flex;
+  align-items: center;
+  gap:10px;
+  top:130px;
+  right:160px;
+  position: absolute;
+  font-size: 12px;
+}
+.download{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 200px;
+  top: 200px;
+   font-size: 10px;
+}
+.download-app-section1{
+  display: flex;
+  position: absolute;
+  right: 210px;
+  top: 250px;
+  block-size: 30px;
+  
+}
+.download-app-section2{
+  display: flex;
+  top: 250px;
+  position: absolute;
+  right: 100px;
+  block-size: 30px;
+}
+.line-3{
+   width:1390px;
+   top:350px;
+   position: absolute;
+}
+.description-1{
+  font-size: 13px;
+  position: absolute;
+  top:100px;
+  left: 15px;
+}
+.footer-bottom1{
+  position: absolute;
+  top: 350px;
+  left: 15px;
+  font-size: 12px;
+}
+.footer-bottom2{
+   position: absolute;
+  top: 350px;
+  right: 15px;
+  font-size: 12px;
+}
+
