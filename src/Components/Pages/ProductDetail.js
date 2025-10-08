@@ -5,15 +5,14 @@ import img3 from "../Assets/image2.jpeg";
 import img4 from "../Assets/image3.jpeg";
 import img5 from "../Assets/image4.jpeg";
 import img6 from "../Assets/review 1.jpeg";
-import img7 from "../Assets/review 2.jpeg";
-
+import img7 from "../Assets/review 2.jpeg"; 
 import "./ProductDetails.scss";
 
 const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
   const handleIncrement = () => {
     setQuantity(prev => prev + 1);
-  };
+  }
 
   const handleDecrement = () => {
     if (quantity > 1) {
@@ -22,27 +21,24 @@ const ProductDetails = () => {
   }
   return (
     <div className="product-details-container">
-
-      {/* Left Side - Images */}
+ 
       <div className="product-images">
         <div className="main-image">
           <img src={img1} alt="Main product" />
         </div>
         <div className="thumbnails">
-          <img src={img1} alt="Thumbnail 1" />
-          <img src={img2} alt="Thumbnail 2" />
-          <img src={img3} alt="Thumbnail 3" />
-          <img src={img4} alt="Thumbnail 4" />
-          <img src={img5} alt="Thumbnail 5" />
+          <img src={img1}/>
+          <img src={img2}/>
+          <img src={img3}/>
+          <img src={img4} />
+          <img src={img5}/>
         </div>
       </div>
-
-      {/* Right Side - Info */}
+ 
       <div className="product-info">
         <h2>Custom Recipe Wallpaper, Handwritten Recipe</h2>
         <p className="price">₹3500 / Roll</p>
-
-        {/* Color Selector */}
+ 
         <div className="color-selector">
           <span>Color - Green</span>
           <div className="color-options">
@@ -53,7 +49,7 @@ const ProductDetails = () => {
             <div className="color pink" />
           </div>
         </div>
-        <div className="quantity-selector">
+        <div className="quantity">
           <span>Quantity (Roll)</span>
           <div className="quantity-buttons">
             <button onClick={handleDecrement}>-</button>
@@ -61,7 +57,7 @@ const ProductDetails = () => {
             <button onClick={handleIncrement}>+</button>
           </div>
         </div>
-        <div className="utility-buttons">
+        <div className="calculator-buttons">
           <button className="calc-btn">Calculate Rolls</button>
           <button className="calc-btn">Installer Price Calculator</button>
         </div>
@@ -69,14 +65,14 @@ const ProductDetails = () => {
           <input type="text" placeholder="Enter Pincode" />
           <button>Check</button>
         </div>
-        <div className="installation-box">
+        <div className="install-box">
           <input type="checkbox" defaultChecked />
           <label>
             <strong>Installation by Paperwall</strong>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.
               <br />
-              <strong>₹800 / Roll</strong> – Need to pay at the time of booking the order
+              <strong>₹800 / Roll</strong> - Need to pay at the time of booking the order
             </span>
           </label>
         </div>
@@ -104,7 +100,7 @@ const ProductDetails = () => {
             </li>
           </ol>
         </div>
-        <div className="action-buttons">
+        <div className="addd-buttons">
           <button className="add-to-cart">Add to Cart</button>
           <button className="buy-now">Buy Now</button>
         </div>
@@ -113,7 +109,7 @@ const ProductDetails = () => {
           <h3>Product Details</h3>
           <div className="detail-row">
             <div className="label">Product Name</div>
-            <div className="value">
+            <div className="para">
               Custom Recipe Wallpaper, handwritten recipe
               <p>
                 Create a raw and earthy atmosphere with stone-style wallpaper to create a perfect contemporary look. Wherever you use it, it will add colors of texture and character to your space and works especially well as a feature wall.
@@ -122,7 +118,7 @@ const ProductDetails = () => {
           </div>
           <div className="detail-row">
             <div className="label">Features</div>
-            <div className="value">
+            <div className="para">
               <p>Washable</p>
               <p>Easy to remove</p>
             </div>
@@ -133,7 +129,7 @@ const ProductDetails = () => {
 
           <div className="review">
             <div className="review-header">
-              <img src={img6} alt="John Doe" />
+              <img src={img6}/>
               <div>
                 <strong>John Doe</strong>
               </div>
@@ -146,7 +142,7 @@ const ProductDetails = () => {
 
           <div className="review">
             <div className="review-header">
-              <img src={img7} alt="Derek" />
+              <img src={img7} />
               <div>
                 <strong>Derek</strong>
               </div>
