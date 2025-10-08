@@ -1,10 +1,25 @@
+
+.product-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 60px;
+  background-image: url('../Assets/Backg.jpeg'); // ✅ replace with your image path
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; 
+  width: 100%;
+}
+
 .product-images {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; // keep left aligned
+  align-items: flex-start;
   gap: 20px;
   width: fit-content;
-  margin-left: 40px; // <-- space from left edge
+  margin-left: 40px;
 
   .main-image {
     width: 412px;
@@ -18,9 +33,6 @@
       height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
-
-      
-      
     }
   }
 
@@ -36,8 +48,302 @@
       border: 2px solid #ccc;
       object-fit: cover;
       cursor: pointer;
-
-      
     }
   }
 }
+
+// ========================
+// RIGHT SIDE: PRODUCT INFO
+// ========================
+.product-info {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  // Color Selector
+  .color-selector {
+    span {
+      font-weight: 500;
+    }
+
+    .color-options {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+
+      .color {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+        cursor: pointer;
+
+        &.black { background-color: black; }
+        &.white { background-color: white; }
+        &.yellow { background-color: #fcd34d; }
+        &.blue { background-color: #60a5fa; }
+        &.pink { background-color: #f9a8d4; }
+
+        &.selected {
+          border-color: #000;
+          box-shadow: 0 0 0 2px #000;
+        }
+      }
+    }
+  }
+
+  // Quantity Selector
+  .quantity-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .quantity-buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        width: 32px;
+        height: 32px;
+        border: none;
+        background-color: #eee;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 16px;
+        width: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  // Utility Buttons
+  .utility-buttons {
+    display: flex;
+    gap: 12px;
+
+    .calc-btn {
+      background-color: transparent;
+      padding: 8px 14px;
+      color: #60a5fa;
+      border: 1px solid #8e8fe3;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
+
+  // Pincode Checker
+  .pincode-check {
+    display: flex;
+    gap: 10px;
+
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 160px;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: #d1d5db;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  // Installer Checkbox
+  .installation-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+
+    input[type="checkbox"] {
+      transform: scale(1.2);
+      margin-top: 3px;
+    }
+
+    label {
+      font-size: 14px;
+      line-height: 1.4;
+
+      strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      span {
+        display: block;
+        font-size: 13px;
+        color: #666;
+        margin-top: 4px;
+      }
+    }
+  }
+
+  // Instructions List
+  .instructions {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    ol {
+      padding-left: 20px;
+      font-size: 14px;
+      color: #333;
+
+      li {
+        margin-bottom: 10px;
+
+        strong {
+          font-weight: 600;
+        }
+
+        ul {
+          padding-left: 20px;
+          list-style: disc;
+
+          li {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // Buttons
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+
+    button {
+      padding: 10px 20px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .add-to-cart {
+      background-color: transparent;
+      border: 2px solid #d97706;
+    }
+
+    .buy-now {
+      background-color: #d97706;
+      color: white;
+    }
+  }
+
+  .room-visualizer {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #d97706;
+    color: #d97706;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  // ======================
+  // PRODUCT DETAILS SECTION
+  // ======================
+  .product-details-info {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .detail-row {
+      display: flex;
+      margin-bottom: 12px;
+
+      .label {
+        width: 120px;
+        font-weight: 600;
+      }
+
+      .value {
+        flex: 1;
+
+        p {
+          margin: 4px 0;
+        }
+      }
+    }
+  }
+
+  // ======================
+  // CUSTOMER REVIEWS
+  // ======================
+  .reviews {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .review {
+      margin-bottom: 16px;
+
+      .review-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 6px;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+
+        .stars {
+          font-size: 14px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
