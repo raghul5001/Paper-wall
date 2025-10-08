@@ -7,6 +7,10 @@ import img5 from "../Assets/image4.jpeg";
 import img6 from "../Assets/review 1.jpeg";
 import img7 from "../Assets/review 2.jpeg"; 
 import "./ProductDetails.scss";
+import "../Common/Header";
+import"../Common/Footer";
+import Header from "../Common/Header";
+import Footer from "../Common/Footer";
 
 const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
@@ -21,6 +25,7 @@ const ProductDetails = () => {
   }
   return (
     <div className="product-details-container">
+      <Header/>
  
       <div className="product-images">
         <div className="main-image">
@@ -154,6 +159,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

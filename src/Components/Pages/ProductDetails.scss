@@ -5,7 +5,7 @@
   align-items: flex-start;
   padding: 40px;
   gap: 60px;
-  background-image: url('../Assets/Backg.jpeg'); // ✅ replace with your image path
+  background-image: url('../Assets/Backg.jpeg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -316,9 +316,7 @@
           border-radius: 50%;
         }
 
-        .stars {
-          font-size: 14px;
-        }
+        
       }
 
       p {
